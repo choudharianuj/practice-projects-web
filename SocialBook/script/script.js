@@ -17,7 +17,7 @@ darkBtn.onclick = function (){
     }
 
 } 
-
+ls -l
 if(localStorage.getItem("theme")=="light"){
     darkBtn.classList.remove("dark-btn-on");
     document.body.classList.remove("dark-theme");
