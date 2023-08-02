@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: sans-serif;
+
+}
+
+
+body{
+    background: whitesmoke;
+}
+
+header{
+    display: flex;
+    margin: 30px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    color: navy;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.main-content{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2%;
+}
+
+.img {
+    width: 100%;
+    height: 50%;
+    border-radius: 15px 15px 0 0;
+    
+}
+
+.container{
+    border: 1px solid rgb(1, 18, 72);
+    background-color: #fff;
+    border-radius: 15px;
+    max-height: 550px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.view-all{
+    align-items: center;
+}
+
+.course-name{
+    color: #000000c7;
+    margin: 10px 0 5px;
+}
+.price{
+    /* margin-top: 2px; */
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgba(0, 0, 139, 0.8);
+}
+
+.mar{
+    margin-left: 15px;
+}
+
+.enroll{
+   text-align: center;
+}
+
+.enroll-btn{
+    position: relative;
+    top: 40%;
+    padding: 8px 100px ;
+    font-size: 1rem;
+    color: rgba(5, 0, 139, 0.632);
+    background-color: white;
+    border-radius: 15px;
+}
+
+.view-all{
+    text-align: center;
+    margin: 30px;
+}
+
+.view-btn{
+    padding: 5px 50px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgba(0, 0, 139, 0.901);
+
+}
+
+.mar p{
+    margin-top: 5px ;
+}
+
+.stars{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
