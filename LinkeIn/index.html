@@ -28,13 +28,56 @@
             </div>
             <div class="nav-bar-right">
                 <div class="online">
-                    <img src="./img/user-1.png" class="nav-profile-png">
+                    <img  onclick="toggleMenu()" src="./img/user-1.png" class="nav-profile-png">
                 </div>
                
+            </div>
+            <!-- ------------------------------------------------------------------------------------------------- -->
+
+            <div class="profile-menu-wrap" id="profileMenu">
+                <div class="profile-menu">
+                    <div class="user-info">
+                        <img src="img/user-1.png" >
+                        <div>
+                            <h3>Rayan Walton</h3>
+                            <a href="profile.html">See your Profile</a>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <a href="#" class="profile-menu-link">
+                        <img src="./img/feedback.png" >
+                        <p>Give Feedback</p>
+                        <span>&gt;</span>
+                    </a>
+                    <a href="#" class="profile-menu-link">
+                        <img src="./img/setting.png" >
+                        <p>setting & Privacy</p>
+                        <span>&gt;</span>
+                    </a>
+                    <a href="#" class="profile-menu-link">
+                        <img src="./img/help.png" >
+                        <p>Help & Support</p>
+                        <span>&gt;</span>
+                    </a>
+                    <a href="#" class="profile-menu-link">
+                        <img src="./img/display.png" >
+                        <p>Display & Accessibility</p>
+                        <span>&gt;</span>
+                    </a>
+                    <a href="#" class="profile-menu-link">
+                        <img src="./img/logout.png" >
+                        <p>Logout</p>
+                        <span>&gt;</span>
+                    </a>
+                </div>
             </div>
 
         </nav>
     </header>
+
+    
+
 
     <!-- ------------------------------------------------------------------------------------------------- -->
 
@@ -361,6 +404,13 @@
 
         <!-- ------------------------------------------------------------------------------------------------- -->
     </div>
-    
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+
+        function toggleMenu (){
+            profileMenu.classList.toggle("open-menu");
+
+        }
+    </script>
 </body>
 </html>
