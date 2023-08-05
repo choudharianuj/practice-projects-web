@@ -11,8 +11,8 @@
     <header>
         <nav class="felx-div">
             <div class="nav-left felx-div">
-                <img src="./images/menu.png" class="menu-icon" >
-                <img src="./images/logo.png" class="logo">
+                <img src="./images/menu.png" class="menu-icon" onclick="menuIcon()" >
+                <a href="index.html"><img src="./images/logo.png" class="logo"></a>
             </div>
             <div class="nav-middle felx-div">
                 <div class="search-box felx-div">
@@ -31,7 +31,10 @@
         </nav>
     </header>
 
-    <div class="side-bar">
+<!-- -------------------------------------------------------------------------------------------------------- -->
+    
+
+    <div class="side-bar small-sidebar">
         <div class="shortcut-links">
             <a href="#"><img src="images/home.png" alt=""><p>Home</p></a>
             <a href="#"><img src="images/explore.png" alt=""><p>Explore</p></a>
@@ -55,17 +58,130 @@
             <a href="#"> <img src="images/cameron.png" alt=""><p>Cameron Diaz</p></a>
         </div>
     </div>
-    <!-- -------------------------------------------------------------------------------------------------------- -->
     
     
+
+
+    
     <!-- -------------------------------------------------------------------------------------------------------- -->
+    
+
+    <div class="container large-container">
+        <div class="banner">
+            <img src="images/banner.png" >
+        </div>
+
+        <div class="list-container">
+            <div class="vid-list">
+                <a href="playVideo.html"> <img src="./images/thumbnail1.png" class="thumbnail"></a>
+               
+                <div class="felx-div">
+                    <img src="images/Jack.png" alt="">
+                    <div class="vid-info">
+                        <a href="playVideo.html">Best Channel to Learn Coding  that help you tu be Web Developer</a>
+                        <p>Easy Tutorials</p>
+                        <p>15k Views &bull; 2 days</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""> <img src="./images/thumbnail2.png" class="thumbnail"></a>
+               
+                <div class="felx-div">
+                    <img src="images/Jack.png" alt="">
+                    <div class="vid-info">
+                        <a href="">Best Channel to Learn Coding  that help you tu be Web Developer</a>
+                        <p>Easy Tutorials</p>
+                        <p>15k Views &bull; 2 days</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""> <img src="./images/thumbnail3.png" class="thumbnail"></a>
+               
+                <div class="felx-div">
+                    <img src="images/Jack.png" alt="">
+                    <div class="vid-info">
+                        <a href="#">Best Channel to Learn Coding  that help you tu be Web Developer</a>
+                        <p>Easy Tutorials</p>
+                        <p>15k Views &bull; 2 days</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""> <img src="./images/thumbnail4.png" class="thumbnail"></a>
+               
+                <div class="felx-div">
+                    <img src="images/Jack.png" alt="">
+                    <div class="vid-info">
+                        <a href="#">Best Channel to Learn Coding  that help you tu be Web Developer</a>
+                        <p>Easy Tutorials</p>
+                        <p>15k Views &bull; 2 days</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""> <img src="./images/thumbnail5.png" class="thumbnail"></a>
+               
+                <div class="felx-div">
+                    <img src="images/Jack.png" alt="">
+                    <div class="vid-info">
+                        <a href="#">Best Channel to Learn Coding  that help you tu be Web Developer</a>
+                        <p>Easy Tutorials</p>
+                        <p>15k Views &bull; 2 days</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""> <img src="./images/thumbnail6.png" class="thumbnail"></a>
+               
+                <div class="felx-div">
+                    <img src="images/Jack.png" alt="">
+                    <div class="vid-info">
+                        <a href="#">Best Channel to Learn Coding  that help you tu be Web Developer</a>
+                        <p>Easy Tutorials</p>
+                        <p>15k Views &bull; 2 days</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""> <img src="./images/thumbnail7.png" class="thumbnail"></a>
+               
+                <div class="felx-div">
+                    <img src="images/Jack.png" alt="">
+                    <div class="vid-info">
+                        <a href="#">Best Channel to Learn Coding  that help you tu be Web Developer</a>
+                        <p>Easy Tutorials</p>
+                        <p>15k Views &bull; 2 days</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""> <img src="./images/thumbnail8.png" class="thumbnail"></a>
+               
+                <div class="felx-div">
+                    <img src="images/Jack.png" alt="">
+                    <div class="vid-info">
+                        <a href="#">Best Channel to Learn Coding  that help you tu be Web Developer</a>
+                        <p>Easy Tutorials</p>
+                        <p>15k Views &bull; 2 days</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    
     <!-- -------------------------------------------------------------------------------------------------------- -->
     <script >
-        var menuIcon = document.querySelector(".menu-icon");
+        
         var sideBar = document.querySelector(".side-bar");
+        var container = document.querySelector(".container");
 
-        menuIcon.onClick = function(){
+         var menuIcon = function(){
             sideBar.classList.toggle("small-sidebar");
+            container.classList.toggle("large-container");
         }
 
     </script>
