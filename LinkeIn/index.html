@@ -19,7 +19,7 @@
             </div>
             <div class="nav-bar-centre">
                 <ul>   
-                     <li><a href="#" class="active-link" ><img src="img/home.png"><span>Home</span></a></li>
+                     <li><a href="index.html" class="active-link" ><img src="img/home.png"><span>Home</span></a></li>
                      <li><a href="#"><img src="img/network.png" alt=""><span>My Network</span></a></li>
                      <li><a href="#"><img src="img/jobs.png" alt=""><span>Jobs</span></a></li>
                      <li><a href="#"><img src="img/message.png" alt=""><span>Messaging</span></a></li>
@@ -102,7 +102,7 @@
                 </div>
             </div>
 
-            <div class="sidebar-activity">
+            <div class="sidebar-activity" id="sidebarActivity">
                 <h3>RECENT</h3>
                 <a href="#"><img src="img/recent.png" >Web Development</a>
                 <a href="#"><img src="img/recent.png" >User Interface</a>
@@ -124,7 +124,8 @@
                     <a href="#">Discover More</a>
                 </div>
             </div>
-            
+
+            <p onclick="toggleActivity()" id="showmore-link">Show More <b>+</b></p>
         </div>
 
         <!-- ------------------------------------------------------------------------------------------------- -->
@@ -409,6 +410,22 @@
 
         function toggleMenu (){
             profileMenu.classList.toggle("open-menu");
+
+
+        let sidebarActivity = document.getElementById("sidebarActivity");
+        let moreLink = document.getElementById("showmore-link");
+
+        function toggleActivity(){
+            sidebarActivity.classList.toggle("open-activity");
+
+        }
+        if(sidebarActivity.classList.contains("open-activity")){
+            moreLink.innerHTML ="Show Less <b>-</b>";
+        }
+        else{
+            moreLink.innerHTML ="Show More <b>+</b>";
+
+        }
 
         }
     </script>

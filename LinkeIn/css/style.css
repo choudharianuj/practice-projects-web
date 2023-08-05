@@ -668,7 +668,7 @@ margin: 20px 0;
     flex-basis: 25%;
     align-self: flex-start;
     position: sticky;
-    top: 73%;
+    top: 25px;
 }
 
 .profile-container{
@@ -838,4 +838,159 @@ margin: 20px 0;
     background-color: #e4e6eb;
     font-size: 12px;
     font-weight: 500;
+}
+
+.profile-sidebar .sidebar-ad{
+    margin: 0;
+}
+.sidebar-people{
+    background-color: #fff;
+    padding: 15px 25px;
+    margin: 12px 0;
+    font-size: 12px;
+
+}
+
+.sidebar-people h3{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0 20px;
+}
+
+.sidebar-people-row{
+    display: flex;
+    align-items: flex-start;
+    margin: 6px 0;
+
+}
+
+.sidebar-people-row img{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.sidebar-people-row h2{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.sidebar-people-row p{
+    margin: 5px 0 ;
+}
+
+.sidebar-people-row a{
+    display: inline-block;
+    margin: 10px 0;
+    padding: 5px 25px;
+    border: 1px solid #5f5f5f;
+    border-radius: 30px;
+    font-weight: 500;
+
+}
+
+.profile-footer{
+    padding: 0 6% 30px;
+
+}
+
+.profile-footer .side-useful-links{
+    text-align: left;
+    padding: 0;
+}
+
+.profile-footer .copyright{
+    justify-content: flex-start;
+
+}
+
+#showmore-link{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .searchbox{
+        background-color: transparent;
+        width: auto;
+        padding: 0;
+
+    }
+
+    .searchbox input{
+        width: 0;
+        padding: 0;
+    }
+
+    .nav-bar-centre ul li a span{
+        display: none;
+    }
+
+    .nav-bar-centre ul li a{
+        padding-right: 0;
+        margin: 5px;
+    }
+
+    .nav-profile-png{
+        width: 30px;
+    }
+
+    .container{
+        padding: 15px 6px;
+        
+    }
+    .left-sidebar, .right-sidebar{
+        flex-basis: 100%;
+        top:unset;
+        position: relative;
+    }
+
+    .main-content{
+        flex-basis: 100%;
+    }
+
+    .post-stats div{
+        margin: 2px 0;
+    }
+
+    .post-activity-link span{
+        display: none;
+    }
+
+    .post-activity-link img{
+        margin-right: 0;
+    }
+
+    .profile-main , .profile-sidebar{
+        flex-basis: 100%;
+
+    }
+
+    .profile-container{
+        font-size: 14px;
+
+    }
+
+    .profile-pic{
+        width: 100px;
+        margin-top: 50px;
+
+    }
+
+    .profile-description{
+        font-size: 14px;
+    }
+
+    #showmore-link{
+        display: block;
+        width: fit-content;
+        margin: 10px auto;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .sidebar-activity{
+        display: none;
+    }
+    .sidebar-activity.open-activity{
+        display: block;
+    }
 }
