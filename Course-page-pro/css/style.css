@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
+
+}
+
+body{
     background-color:  whitesmoke;
 }
 
@@ -10,14 +14,14 @@
     font-size: 2.5em;
     text-align: center;
     padding: 1.2rem 0 0 0;
-    color: rgb(2, 2, 79);
-    margin-bottom: 0.5rem;
+    color: #001f54;
 }
 
 .main{
-    margin:  3% 5%;
+    margin:  2% 5%;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 
 }
 
@@ -27,6 +31,9 @@
     border-radius: 30px;
     width: 23rem;
     height: 33rem;
+    margin: 2rem;
+    min-width: 300px;
+    max-height: auto;
    
 }
 
@@ -40,7 +47,7 @@ footer button{
     color: #fff;
     font-size: 1rem;
     padding: 0.5rem 3rem;
-    background-color: blue;
+    background-color: #042661;
     border-radius: 80px;   
     text-align: center;
     border: 1px solid #000;
@@ -59,4 +66,69 @@ footer button{
     
 }
 
+.info{
+    margin:  0.5rem 1rem ;
 
+    background-color: #fff;
+}
+
+.info h3{
+    font-size: 1.5rem;
+    color: #2c2b2b;
+    margin-bottom: 5px;
+}
+
+.info .price{
+    font-size: 1.5rem;
+    color: #002bd8;
+    margin-top: 5px;
+}
+
+.info .duration{
+    font-size: 0.8rem;
+    margin-top: 2px;
+    color: #0068d8;
+
+}
+
+.fa-star {
+    font-size: 0.8rem;
+    margin-top: 2px;
+   
+}
+.info .stars{
+    margin: 2px;
+    color: #00d0fa;
+}
+
+.info p{
+    font-size: 0.9rem;
+    margin-bottom: 2px;
+    color: #00507b;
+    margin-bottom: 2px;
+}
+
+.info .but button{
+    margin: auto;
+    padding: 0.5rem ;
+    width: 90%;
+    align-items: center;
+    border-radius: 150px;
+    background-color: #fff;
+    margin-top: 1rem;
+   
+
+}
+
+.info .name{
+    font-size: 1rem;
+    margin: 1px;
+    color: #00d0fa;
+}
+
+.info .but{
+    display: flex;
+    align-items: center;
+    
+    
+}
